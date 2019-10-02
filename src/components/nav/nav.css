@@ -4,6 +4,7 @@ nav {
     right: 0px;
     left: 0px;
     background-color: #fff;
+    z-index: 1;
 }
 
 .nav__items {
