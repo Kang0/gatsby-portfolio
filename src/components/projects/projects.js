@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import { HELMET_PROPS } from 'react-helmet/lib/HelmetConstants';
+import './projects.css'
 
 const Projects = () => {
     const data = useStaticQuery(graphql`
@@ -25,10 +25,18 @@ const Projects = () => {
 
     return (
         <div>
-            <h1>Projects</h1>
-            <Img fluid={data.hundreddays.childImageSharp.fluid} />
-            <Img fluid={data.records.childImageSharp.fluid} />
-        </div>)
+            <h2 className="section__header">Projects</h2>
+            <div className="project__cards">
+                <div className="card">
+                    <Img fluid={data.hundreddays.childImageSharp.fluid} />
+                </div>
+                <div className="card">
+                    <Img fluid={data.records.childImageSharp.fluid} />
+                </div>
+            </div>
+        </div>
+
+    )
 }
 
 export default Projects
