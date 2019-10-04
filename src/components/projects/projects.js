@@ -26,11 +26,13 @@ const Projects = () => {
     return (
         <div>
             <h2 className="section__header">Projects</h2>
-            <div className="project__cards">
-                <div className="card">
+            <div className="card__container">
+                <div className="card__image">
                     <Img fluid={data.hundreddays.childImageSharp.fluid} />
                 </div>
-                <div className="card">
+            </div>
+            <div className="card__container">
+                <div className="card__image">
                     <Img fluid={data.records.childImageSharp.fluid} />
                 </div>
             </div>

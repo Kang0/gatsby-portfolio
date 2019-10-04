@@ -3,29 +3,42 @@
     font-size: 20px;
     font-weight: 400;
     color: #fff;
+    text-align: center;
     margin-top: 56px;
-    margin-left: 50%;
 }
 
-.project__cards {
-    display: grid;
-    grid-template-columns: (2, 1fr);
-    grid-template-rows: 368px;
-    grid-gap: 16px;
-    margin: 40px 0 40px 0;
+.card__container {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    margin-top: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 948px;
+    height: 338px;
 }
 
-.card {
-    width: 40%;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    transition: all .3s ease;
-}
-
-.card:hover {
+.card__container:hover {
     cursor: pointer;
     transform: scale(1.02);
 }
+
+.card__image {
+    display: block;
+    max-width: 60%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .card__container {
+        margin: 0 auto;
+        margin-bottom: 28px;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 474px;
+        height: 150px;
+    }
+}
+
+
+
+
