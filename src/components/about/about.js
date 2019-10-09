@@ -5,6 +5,8 @@ import './about.css'
 
 import BackgroundImage from 'gatsby-background-image'
 
+import AboutInfo from './aboutInfo'
+
 const About = ({ className }) => {
     const {
         snowboard,
@@ -13,7 +15,7 @@ const About = ({ className }) => {
         query {
           snowboard: file(relativePath: { eq: "snowboard.jpg" }) {
             childImageSharp {
-              fluid(quality: 100, maxWidth: 1920) {
+              fluid(quality: 80, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -24,7 +26,7 @@ const About = ({ className }) => {
 
     const backgroundFluidImageStack = [
         snowboard.childImageSharp.fluid,
-        `linear-gradient(to bottom, rgba(10,10,10,1) 10%, rgba(10,10,10,.8) 90%, rgba(10,10,10,1) 100%)`,
+        `linear-gradient(to bottom, rgba(10,10,10,1) 20%, rgba(10,10,10,.8) 90%, rgba(10,10,10,1) 100%)`,
     ].reverse()
 
     return (
@@ -34,21 +36,16 @@ const About = ({ className }) => {
             fluid={backgroundFluidImageStack}
             className={className}
         >
-            <StyledInnerWrapper>
-                <div className="header__info">
-
-                </div>
-            </StyledInnerWrapper>
+            <AboutInfo />
         </BackgroundImage>
     )
 }
 
-const StyledInnerWrapper = styled.div`
-  margin-top: 75px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
+// const StyledInnerWrapper = styled.div`
+//   margin-top: 75px;
+//   display: flex;
+//   flex-direction: column;
+// `
 
 const AboutBackground = styled(About)`
   width: 100%;
