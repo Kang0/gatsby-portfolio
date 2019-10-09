@@ -30,11 +30,23 @@ const Projects = () => {
                 <div className="card__image">
                     <Img fluid={data.hundreddays.childImageSharp.fluid} />
                 </div>
+                <p className="card__text-header">100 Days</p>
+                <p className="card__text-body">
+                    <a href="">Github</a><br />
+                    <a href="">About</a><br />
+                    <a href="">Live (Heroku)</a>
+                </p>
             </div>
             <div className="card__container">
                 <div className="card__image">
                     <Img fluid={data.records.childImageSharp.fluid} />
                 </div>
+                <p className="card__text-header">Record Your Records</p>
+                <p className="card__text-body">
+                    <a href="">Github</a><br />
+                    <a href="">About</a><br />
+                    <a href="">Live (Heroku)</a>
+                </p>
             </div>
         </div>
 

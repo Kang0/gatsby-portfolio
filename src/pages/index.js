@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Projects from '../components/projects/projects.js'
 import PortfolioHeader from "../components/portfolio-header/portfolio-header"
 import Multiple from '../components/portfolio-header/multiple'
+import About from '../components/about/about'
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <Nav />
     <Multiple />
     <Projects />
+    <About />
   </Layout>
 )
 

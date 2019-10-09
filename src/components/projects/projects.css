@@ -17,15 +17,37 @@
     height: 338px;
 }
 
-.card__container:hover {
+/* .card__container:hover {
     cursor: pointer;
     transform: scale(1.02);
-}
+} */
 
 .card__image {
-    display: block;
-    max-width: 60%;
+    float: left;
+    width: 620px;
     height: auto;
+}
+
+.card__text-header {
+    width: 328px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: Muli, sans-serif; 
+    font-weight: 600;
+    margin-top: 90px;
+}
+
+.card__text-body {
+    width: 328px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: Muli, sans-serif;
+    font-weight: 200;
+    margin-top: 35px;
 }
 
 @media screen and (max-width: 600px) {
