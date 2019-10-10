@@ -8,7 +8,7 @@ const Projects = () => {
     query {
         hundreddays: file(relativePath: { eq: "hundred-days.png"}) {
             childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 600, maxHeight: 338) {
                     ...GatsbyImageSharpFluid
                 }
             }

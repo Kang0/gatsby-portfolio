@@ -75,14 +75,85 @@ a.card__link:hover {
     margin-top: 35px;
 }
 
+@media screen and (max-width: 900px) {
+    .card__container {
+        margin: 0 auto;
+        margin-bottom: 16px;
+        margin-top: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 670px;
+        height: 338px;
+    } 
+
+    .card__image {
+        float: left;
+        margin-top: 60px;
+        width: 402px;
+        height: auto;
+    }
+
+    .card__text-header {
+        width: 268px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-family: Muli, sans-serif; 
+        font-weight: 600;
+        margin-top: 90px;
+    }
+    
+    .card__text-body {
+        width: 268px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-family: Muli, sans-serif;
+        font-weight: 200;
+        margin-top: 35px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .card__container {
         margin: 0 auto;
+        margin-top: 15px;
         margin-bottom: 28px;
         overflow: hidden;
         white-space: nowrap;
         width: 474px;
         height: 150px;
+    }
+
+    .card__image {
+        float: left;
+        margin-top: 0px;
+        width: 284px;
+        height: auto;
+    }
+
+    .card__text-header {
+        width: 190px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-family: Muli, sans-serif; 
+        font-weight: 600;
+        margin-top: 0px;
+    }
+    
+    .card__text-body {
+        width: 190px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-family: Muli, sans-serif;
+        font-weight: 200;
+        margin-top: 10px;
     }
 }
 
