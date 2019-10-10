@@ -32,9 +32,9 @@ const Projects = () => {
                 </div>
                 <p className="card__text-header">100 Days</p>
                 <p className="card__text-body">
-                    <a href="">Github</a><br />
-                    <a href="">About</a><br />
-                    <a href="">Live (Heroku)</a>
+                    <a className="card__link" href="https://github.com/Kang0/react-100-days">Github</a><br />
+                    <a className="card__link" href="">About</a><br />
+                    <a className="card__link" href="https://react-100-days.herokuapp.com/">Live (Heroku)</a>
                 </p>
             </div>
             <div className="card__container">
@@ -43,9 +43,9 @@ const Projects = () => {
                 </div>
                 <p className="card__text-header">Record Your Records</p>
                 <p className="card__text-body">
-                    <a href="">Github</a><br />
-                    <a href="">About</a><br />
-                    <a href="">Live (Heroku)</a>
+                    <a className="card__link" href="https://github.com/Kang0/rails-spotify">Github</a><br />
+                    <a className="card__link" href="">About</a><br />
+                    <a className="card__link" href="https://record-your-records.herokuapp.com/">Live (Heroku)</a>
                 </p>
             </div>
         </div>

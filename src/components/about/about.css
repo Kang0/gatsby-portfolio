@@ -1,6 +1,6 @@
 .about__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .about__image {
@@ -9,4 +9,14 @@
     margin-left: 15vw;
     width: 200px;
     height: 200px;
+}
+
+.about__text {
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: Muli, sans-serif;
+    font-weight: 200;
+    color: #fff;
+    
 }
